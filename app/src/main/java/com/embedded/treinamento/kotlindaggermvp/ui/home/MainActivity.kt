@@ -1,7 +1,8 @@
-package com.embedded.treinamento.kotlindaggermvp
+package com.embedded.treinamento.kotlindaggermvp.ui
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.embedded.treinamento.kotlindaggermvp.R
 
 class MainActivity : AppCompatActivity() {
 
