@@ -1,7 +1,15 @@
 package com.embedded.treinamento.kotlindaggermvp.data.remote.model
 
-/**
- * Created by treinamento-huawei on 12/19/17.
- */
-class LoginResponse {
-}
+import com.embedded.treinamento.kotlindaggermvp.data.model.UserModel
+import com.google.gson.annotations.SerializedName
+
+data class LoginResponse(
+        @SerializedName("status")
+        val status: Int,
+
+        @SerializedName("token")
+        val token: String,
+
+        @SerializedName("user")
+        val user: UserModel
+)

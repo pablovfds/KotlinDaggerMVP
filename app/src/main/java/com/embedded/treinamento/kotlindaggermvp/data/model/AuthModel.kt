@@ -1,7 +1,4 @@
 package com.embedded.treinamento.kotlindaggermvp.data.model
 
-/**
- * Created by treinamento-huawei on 12/19/17.
- */
-class AuthModel {
-}
+class AuthModel constructor(val email: String,
+                            val password: String)

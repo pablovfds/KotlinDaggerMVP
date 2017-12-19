@@ -1,4 +1,4 @@
-package com.embedded.treinamento.kotlindaggermvp.ui
+package com.embedded.treinamento.kotlindaggermvp.ui.home
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle

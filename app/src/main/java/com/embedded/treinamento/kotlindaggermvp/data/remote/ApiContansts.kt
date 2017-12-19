@@ -1,7 +1,6 @@
-package com.embedded.treinamento.kotlindaggermvp.data.remote.model
+package com.embedded.treinamento.kotlindaggermvp.data.remote
 
-/**
- * Created by treinamento-huawei on 12/19/17.
- */
 object ApiContansts {
+    const val API_BASE_ENDPOINT = "http://tytws.herokuapp.com"
+    const val AUTH_API = "/user/auth"
 }

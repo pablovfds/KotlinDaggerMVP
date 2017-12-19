@@ -3,6 +3,7 @@ package com.embedded.treinamento.kotlindaggermvp.data.remote
 import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
+import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
@@ -33,7 +34,5 @@ object ApiManager {
                 .build()
     }
 
-    fun <T> createService(service: Class<T>): T {
-        return retrofit.create(service)
-    }
+    fun <T> createService(service: Class<T>): T = retrofit.create(service)
 }

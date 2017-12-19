@@ -1,7 +1,14 @@
 package com.embedded.treinamento.kotlindaggermvp.ui.base
 
-/**
- * Created by treinamento-huawei on 12/19/17.
- */
-class BasePresenterImpl {
+open class BasePresenterImpl <V : BaseView> : BasePresenter<V> {
+
+    protected var mView: V? = null
+
+    override fun attachView(view: V) {
+        mView = view
+    }
+
+    override fun detachView() {
+        mView = null
+    }
 }
